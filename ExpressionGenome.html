@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <title>Pra-GE-ATLAS</title>
+  <link rel="icon" type="image/svg" href="./image/icon32.svg">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <head>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-7243260-2']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+    <style>
+      * {box-sizing: border-box}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+	</head>
+	<body>
+    <section>
+		<div class="container">
+			<header class="clearfix">
+				<img src="image/logo_epiomides.png" style="float: right; height: 30%; width: 30%; object-fit: contain;">
+        <br>
+        <span>Valmei lab<span data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+				<h1><a href="./index.html" style="color: #BCA16F;">Pra-GE-ATLAS</a></h1>
+        
+			</header>	
+			<div class="main">
+				<nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+					<div class="cbp-hsinner">
+						<ul class="cbp-hsmenu">
+              <li><a href="./index.html"><i class="fa fa-home"></i>  Home</a></li>
+							<li>
+								<a href="#"><i class="fa fa-search"></i>   Search<i class="fa fa-chevron-down"></i></a>
+								<ul class="cbp-hssubmenu">
+                  <li><a href="ExpressionGenome.html"><img src="image/transcript.png" alt="transcript" style="height: 75%; width: 75%;"/><span>Expression - Genome</span></a></li>
+									<li><a href="ExpressionTranscriptome.html"><img src="image/transcript.png" alt="transcript" style="height: 75%; width: 75%;"/><span>Expression - Transcriptome</span></a></li>
+									<li><a href="AbundanceProteome.html"><img src="image/protein.png" alt="protein" style="height: 75%; width: 75%;"><span>Proteins</span></a></li>
+									<li><a href="SplicingGenome.html"><img src="image/isoforms.png" alt="isoform" style="height: 75%; width: 75%;"/><span>Splicing Events</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"> <i class="fa fa-cogs"></i>   Tools<i class="fa fa-chevron-down"></i></a>
+								<ul class="cbp-hssubmenu cbp-hssub-rows">
+									<li><a href="Diamond.html"><img src="image/blast.png" alt="blast"  style="height: 75%; width: 75%;"/><span>Diamond Blastp</span></a></li>
+									<li><a href="#"><img src="image/network.png"  alt="network"  style="height: 75%; width: 75%;"/><span>Networks</span></a></li>
+									<li><a href="#"><img src="image/differential.png" alt="differential" style="height: 75%; width: 75%;"/><span>Heatmap</span></a></li>
+                  <li><a href="Primers.html"><img src="image/primers.png" alt="primers" style="height: 75%; width: 75%;"/><span>Primers Design</span></a></li>
+                  <li><a href="Ortholog.html"><img src="image/orthologr.png" alt="primers" style="height: 75%; width: 75%;"/><span>Orthology Inference</span></a></li>
+                  <li><a href="RegulationBrowser.html"><img src="image/browser.png" alt="primers" style="height: 75%; width: 75%;"/><span>Regulation Browser</span></a></li>
+								</ul>
+							</li>
+              <li>
+								<a href="#"><i class="fa fa-database"></i>   Related Db<i class="fa fa-chevron-down"></i></a>
+								<ul class="cbp-hssubmenu">
+									<li><a href="#"><img src="image/plantara.png" alt="plantara"/><span>Plantara | Late </span></a></li>
+									<li><a href="#"><img src="image/plantina.png" alt="plantina"/><span>Plantina | Late </span></a></li>
+									<li><a href="https://rocesv.github.io/PlantFUNCO/"><img src="image/PlantFUNCO_res.png" alt="PlantFUNCO"/><span>PlantFUNCO | Available </span></a></li>
+								</ul>
+							</li>
+							<li><a href="Download.html"> <i class="fa fa-download"></i>  Download</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<script src="js/cbpHorizontalSlideOutMenu.min.js"></script>
+		<script>
+			var menu = new cbpHorizontalSlideOutMenu( document.getElementById( 'cbp-hsmenu-wrapper' ) );
+		</script>
+    </section>
+
+  <style>
+    :root {
+  --color-light: white;
+  
+  --color-background: var(--color-light);
+  
+  
+ 
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+
+mark {
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.card {
+  background: var(--color-background);
+  border-radius: var(--size-radius);
+  border: 3px solid var(--color-shadow, currentColor);
+  box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+}
+
+
+  </style>
+   <br>
+  <br>
+  <iframe src="./Tables/GenomeExpressionTable.html"  style="position:-ms-page; height: 100vh; width: 100%; border: none"></iframe>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section>
+    <footer style="background-color:#BCA16F; height: 50%;">
+      <style>
+        
+    .footerContainer {
+      margin:0;
+      padding:0;
+  
+    /*  <JUST FOR DISPLAY ON CODEPEN> */
+      margin: 0 auto;
+      margin-top: 0px;
+    /* </JUST FOR DISPLAY ON CODEPEN> */
+    }
+    .footer {
+      margin:0;
+      padding:0;
+      display:flex;
+      height: 130px;
+    }
+  
+    .footer div {
+      display:inline-block;
+      flex-grow:1;
+      flex-basis: 0;
+      text-align:center;
+    }
+  
+    .footerLink {
+      color:white;
+      text-decoration:none;
+      display:block;
+      width:100%;
+      height: 130px;
+      line-height: 130px;
+  
+      flex-grow: 1;
+  
+      position: relative;
+  
+      transition: background-color 0.1s ease-in-out;
+    }
+  
+    .footerLink:hover {
+      background-color:#d8b97f;
+    }
+  
+    .footerLink:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0%;
+  
+      box-sizing: border-box;
+  
+      position: absolute;
+      left: 0px;
+      top: 50%;
+  
+      border-style: dashed;
+      border-width: 0px;
+      border-top-width: 4px;
+      border-bottom-width: 4px;
+      border-color: transparent;
+  
+  
+      background-color: transparent;
+  
+      transition: height 0.3s ease-in-out, border 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+  
+    .footerLink:hover:before {
+      height: 100%;
+      top: 0%;
+      border-color: #FBF0C8;
+  
+      transition: height 0.3s ease-in-out, border 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+      </style>
+       <div class="darkBack footerContainer centered"  style="background-color: #BCA16F;">
+        <div class="footer" style="background-color: #BCA16F;">
+          <a id="Contact"></a>
+          <div><a href="https://bos.uniovi.es/personal/becarios/-/asset_publisher/0036/content/doct_fernandez-roces-victor;jsessionid=D4DB2E0D32CFDD74823F4445565158A4?redirect=%2Fpersonal%2Fbecarios" class="footerLink" onMouseOver="this.style.color='#FBF0C8'" onMouseOut="this.style.color='#FFFFFF'" style="color: white;">Contact</a></div>
+          <div><a href="https://rocesv.github.io/" class="footerLink" onMouseOver="this.style.color='#FBF0C8'" onMouseOut="this.style.color='#FFFFFF'" style="color: white;">About</a></div>
+          <div><a href="https://github.com/RocesV/" class="footerLink" onMouseOver="this.style.color='#FBF0C8'" onMouseOut="this.style.color='#FFFFFF'" style="color: white;">Github</a></div>
+          <div><a href="https://hub.docker.com/u/rocesv" class="footerLink" onMouseOver="this.style.color='#FBF0C8'" onMouseOut="this.style.color='#FFFFFF'" style="color: white;">Dockerhub</a></div>
+          <div><a href="https://www.instagram.com/valmeilab/" class="footerLink" onMouseOver="this.style.color='#FBF0C8'" onMouseOut="this.style.color='#FFFFFF'" style="color: white;">Instagram</a></div>
+          <div><a href="https://twitter.com/valmeilab?lang=es" class="footerLink" onMouseOver="this.style.color='#FBF0C8'" onMouseOut="this.style.color='#FFFFFF'" style="color: white;">Twitter</a></div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+
+
+  
+</body>
+</html>
