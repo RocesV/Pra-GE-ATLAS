@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Roces V"
+  },
+  "text": {
+    "more": "\nFiltered M08 (module eight) WGCNA network from Pra-GE-ATLAS proteomics section with 0.4 threshold.",
+    "intro": "Filtered M08 (module eight) WGCNA network from Pra-GE-ATLAS proteomics section with 0.4 threshold.",
+    "title": "WGCNA Proteome Abundance Network"
+  },
+  "legend": {
+    "edgeLabel": "WGCNA_hybrid",
+    "colorLabel": "WGCNA M08 Sub-Modules",
+    "nodeLabel": "ProtSymbol"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "module",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
