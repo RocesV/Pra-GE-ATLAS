@@ -164,12 +164,90 @@ mark {
   <br>
   <div class="card" style="width: 95%; margin: auto;">
     <h2 style="margin-left: 25px; margin-right: 25px; color: black; font-size: xx-large;"><i class="fa fa-coffee" aria-hidden="true"></i> Summary</h2>
-      <p class="input__label" style="text-align: justify; margin-left: 25px; margin-right: 25px; font-size:x-large;">This tool is designed to further explore, in an interactive way, the WGCNA co-expression networks computed in the Pra-GE-ATLAS manuscript for our reference species, <em>Pinus radiata</em>. A threshold of 0.4 was chosen for network visualization, and all tissue/stress conditions were included in each network. For modules (M) with a large number of edges, a more stringent threshold was chosen. Please refer to the description of each module for clarification. Extended information about the modules is provided in the manuscript. The Gene Expression - Level Network is displayed by default. Users can switch between displays by clicking on the following options: <br><br><strong><a href="Network.html" onMouseOver="this.style.color='#17202A'" onMouseOut="this.style.color='#5F6A6A'"  style="color: #5F6A6A;">Gene Expression - Level Network</a></strong>&emsp;&emsp;&emsp;&emsp;&emsp;<strong><a href="Network_protein.html" onMouseOver="this.style.color='#17202A'" onMouseOut="this.style.color='#5F6A6A'"  style="color: #5F6A6A;">Protein Abundance - Level Network</a></strong><br><br> *Please be aware that rendering large networks corresponding to the first modules could take some time (< 1 min). </p>
+      <p class="input__label" style="text-align: justify; margin-left: 25px; margin-right: 25px; font-size:x-large;">This tool is designed to further explore, in an interactive way, the WGCNA co-expression networks computed in the Pra-GE-ATLAS manuscript for our reference species, <em>Pinus radiata</em>. All tissue/stress conditions were included in each network. For modules (M) with a large number of edges, a more stringent threshold was chosen. Please refer to the description of each module for clarification. Extended information about the modules is provided in the manuscript. The Gene Expression - Level Network is displayed by default. Full network is only available in the Gene - Expression Level Network due to the high connectivity of the Protein Abundance - Level Network. Users can switch between displays by clicking on the following options: <br><br><strong><a href="Network.html" onMouseOver="this.style.color='#17202A'" onMouseOut="this.style.color='#5F6A6A'"  style="color: #5F6A6A;">Gene Expression - Level Network</a></strong>&emsp;&emsp;&emsp;&emsp;&emsp;<strong><a href="Network_protein.html" onMouseOver="this.style.color='#17202A'" onMouseOut="this.style.color='#5F6A6A'"  style="color: #5F6A6A;">Protein Abundance - Level Network</a></strong><br><br> *Please be aware that rendering large networks corresponding to the full network or the biggest modules could take some time (< 1 min). </p>
     </div>
     <br>
   <br>
-
-  <iframe src=""  style="position:-ms-page; height: 150vh; width: 100%; border: none"></iframe>
+  <style>
+    .button-5 {
+      align-items: center;
+      background-clip: padding-box;
+      background-color: #fff;
+      border-color: black;
+      border: 1px solid;
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: black;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: auto;
+      margin-top: 2px;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+    }
+    
+    .button-5:hover,
+    .button-5:focus {
+      background-color: #BCA16F;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      border-color: #BCA16F;
+      color: #fff;
+    }
+    
+    .button-5:hover {
+      transform: translateY(-1px);
+    }
+    
+    .button-5:active {
+      background-color: #BCA16F;
+      box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+      border-color: #BCA16F;
+      color: #fff;
+      transform: translateY(0);
+    }
+    </style>
+    <script>
+      function loadFrame (elm){
+          var frame1 = document.getElementById('frame1');
+          frame1.src = elm.dataset.src;
+      }
+      </script>
+        <button class="button-5" role="button" style="margin-left: 70px;"  id="b1" data-src="./Networks/Expression/Full/network/index.html" onClick="loadFrame(this)">Full</button>
+        <button class="button-5" role="button" id="b2" data-src="./Networks/Expression/M01/network/index.html" onClick="loadFrame(this)">M01</button>
+        <button class="button-5" role="button" id="b3" data-src="./Networks/Expression/M02/network/index.html" onClick="loadFrame(this)">M02</button>
+        <button class="button-5" role="button" id="b4" data-src="./Networks/Expression/M03/network/index.html" onClick="loadFrame(this)">M03</button>
+        <button class="button-5" role="button" id="b5" data-src="./Networks/Expression/M04/network/index.html" onClick="loadFrame(this)">M04</button>
+        <button class="button-5" role="button" id="b6" data-src="./Networks/Expression/M05/network/index.html" onClick="loadFrame(this)">M05</button>
+        <button class="button-5" role="button" id="b7" data-src="./Networks/Expression/M06/network/index.html" onClick="loadFrame(this)">M06</button>
+        <button class="button-5" role="button" id="b8" data-src="./Networks/Expression/M07/network/index.html" onClick="loadFrame(this)">M07</button>
+        <button class="button-5" role="button" id="b9" data-src="./Networks/Expression/M08/network/index.html" onClick="loadFrame(this)">M08</button>
+        <button class="button-5" role="button" id="b10" data-src="./Networks/Expression/M09/network/index.html" onClick="loadFrame(this)">M09</button>
+        <button class="button-5" role="button" id="b11" data-src="./Networks/Expression/M10/network/index.html" onClick="loadFrame(this)">M10</button>
+        <button class="button-5" role="button" id="b12" data-src="./Networks/Expression/M11/network/index.html" onClick="loadFrame(this)">M11</button>
+        <button class="button-5" role="button" id="b13" data-src="./Networks/Expression/M12/network/index.html" onClick="loadFrame(this)">M12</button>
+        <button class="button-5" role="button" id="b14" data-src="./Networks/Expression/M13/network/index.html" onClick="loadFrame(this)">M13</button>
+        <button class="button-5" role="button" id="b15" data-src="./Networks/Expression/M14/network/index.html" onClick="loadFrame(this)">M14</button>
+        <button class="button-5" role="button" id="b16" data-src="./Networks/Expression/M15/network/index.html" onClick="loadFrame(this)">M15</button>
+        <button class="button-5" role="button" id="b17" data-src="./Networks/Expression/M16/network/index.html" onClick="loadFrame(this)">M16</button>
+        <button class="button-5" role="button" id="b18" data-src="./Networks/Expression/M17/network/index.html" onClick="loadFrame(this)">M17</button>
+        <button class="button-5" role="button" id="b19" data-src="./Networks/Expression/M18/network/index.html" onClick="loadFrame(this)">M18</button>
+        <button class="button-5" role="button" id="b20" data-src="./Networks/Expression/M19/network/index.html" onClick="loadFrame(this)">M19</button>
+        <button class="button-5" role="button" id="b21" data-src="./Networks/Expression/M20/network/index.html" onClick="loadFrame(this)">M20</button>
+        <br><br>
+  <iframe id="frame1" scrolling="yes" style="position:-ms-page; height: 150vh; width: 100%; border: none"></iframe>
   
   <section>
     <footer style="background-color:#BCA16F; height: 50%;">

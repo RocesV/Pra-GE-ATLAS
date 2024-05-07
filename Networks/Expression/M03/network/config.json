@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "https://dl.dropboxusercontent.com/scl/fi/73js7uad18jv3ticbbb1r/data.json?rlkey=qhulhux3m2b6ec8h1sl46bhh0&st=91ls4h1k&dl=0",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Roces V"
+  },
+  "text": {
+    "more": "\nFiltered M03 (module 03) WGCNA network from Pra-GE-ATLAS transcriptomics section with 0.02 threshold.",
+    "intro": "Filtered M03 (module 03) WGCNA network from Pra-GE-ATLAS transcriptomics section with 0.02 threshold.",
+    "title": "WGCNA Transcriptome Expression Network"
+  },
+  "legend": {
+    "edgeLabel": "WGCNA_hybrid",
+    "colorLabel": "WGCNA M03 Sub-Modules",
+    "nodeLabel": "TranscriptSymbol"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "module",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
